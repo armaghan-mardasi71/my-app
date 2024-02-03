@@ -1,0 +1,172 @@
+a {
+  text-decoration: none;
+}
+
+.user-profile-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 40px;
+  margin-top: -50px;
+  color: rgb(59, 55, 55);
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.user-profile-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.user-id {
+  font-size: 20px;
+  opacity: 0.6;
+  /* font-weight: 100; */
+  margin-top: 8px;
+}
+
+.follow-btn {
+  font-weight: bold;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  color: rgb(91, 90, 90);
+  background-color: rgba(128, 128, 128, 0.149);
+  border: 1px solid rgba(91, 90, 90, 0.209);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+}
+
+.follow-btn:hover {
+  background-color: rgba(128, 128, 128, 0.261);
+}
+
+.user-desc {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.follower-following {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.follower-following > a {
+  color: rgba(128, 128, 128, 1);
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+}
+
+.follower-following > a:hover {
+  color: rgb(33, 8, 255);
+}
+
+.follower-following > a:last-child {
+  margin-left: 10px;
+}
+
+.follower-number,
+.following-number {
+  font-weight: bold;
+  margin-right: 5px;
+  color: rgb(59, 55, 55);
+}
+
+.website-link {
+  margin-bottom: 15px;
+}
+
+.website-link > a {
+  margin-left: 6px;
+  font-size: 14px;
+  color: rgb(59, 55, 55);
+}
+
+.website-link > a:hover {
+  color: rgb(33, 8, 255);
+  text-decoration: underline;
+}
+
+.profile-achievements {
+  border-top: 1px solid rgba(128, 128, 128, 0.245);
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.profile-achievements > h3 {
+  font-weight: 600;
+  padding: 18px 0;
+}
+
+.achievement-logo > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.beta-feedback {
+  margin-bottom: 15px;
+}
+
+.beta {
+  font-size: 12px;
+  width: 60px;
+  height: 20px;
+  padding: 3px 8px;
+  border: 1px solid green;
+  color: green;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+}
+
+.feedback-link {
+  font-size: 12px;
+  margin-left: 10px;
+  color: blue;
+}
+
+.feedback-link:hover {
+  text-decoration: underline;
+}
+
+.block-report-link {
+  font-size: 14px;
+  color: rgba(128, 128, 128, 1);
+}
+.block-report-link:hover {
+  color: blue;
+}

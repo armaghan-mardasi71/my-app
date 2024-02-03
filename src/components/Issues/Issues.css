@@ -1,0 +1,164 @@
+.repo-issues-container {
+  width: 90%;
+  margin: -30px auto 0 auto;
+  /* background-color: aquamarine; */
+}
+
+.issue-contribution-box {
+  margin: 20px 0;
+  padding: 40px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+  border: 1px solid rgba(128, 128, 128, 0.245);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.issue-contribution-box > h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.issue-contribution-box > p {
+  font-size: 14px;
+}
+
+.issue-contribution-box > p > a {
+  text-decoration: underline;
+  color: #218bff;
+}
+
+.new-issue-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-repo-issues {
+  width: 68%;
+
+  display: flex;
+}
+
+.search-repo-issues > input {
+  margin-left: -2px;
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.245);
+  background-color: rgba(167, 165, 165, 0.1);
+  color: rgb(36, 34, 34);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.search-repo-issues > input:focus {
+  background-color: unset;
+  border: 2px solid blue;
+}
+
+.issues-label-milestone {
+  display: flex;
+}
+
+.labels,
+.milestones {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  background-color: unset;
+  padding: 3px 15px;
+  border: 1px solid rgba(128, 128, 128, 0.245);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.labels:hover,
+.milestones:hover {
+  background-color: rgba(128, 128, 128, 0.149);
+}
+
+.badge {
+    font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+.labels {
+  border-right: none;
+  border-bottom-right-radius: unset;
+  border-top-right-radius: unset;
+}
+
+.milestones {
+  border-bottom-left-radius: unset;
+  border-top-left-radius: unset;
+}
+
+.issues-label-milestone > button > a {
+  color: #5f7161;
+  font-weight: bold;
+  width: 100%;
+}
+
+.new-issue {
+  background-color: #30a14e;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.new-issue > a {
+  color: #fff;
+}
+
+.issue-empty-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 20px 0;
+  padding: 50px 300px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+  border: 1px solid rgba(128, 128, 128, 0.245);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.issue-empty-box > h3 {
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.issue-empty-box > p {
+  font-size: 14px;
+  line-height: 2;
+  color: rgb(148, 138, 138);
+}
+
+.issue-empty-box > p > a {
+  text-decoration: underline;
+  color: #218bff;
+}

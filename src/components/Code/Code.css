@@ -1,0 +1,160 @@
+.repo-page-container {
+  width: 90%;
+
+  margin: -50px auto 0 auto;
+}
+
+.repo-page-header {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.245);
+}
+
+.repo-page-header-left {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.repo-page-main {
+  display: flex;
+}
+.repo-page-main-left {
+  flex: 2.5;
+}
+
+.repo-page-header-left > img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.repo-page-header-left > a {
+  color: rgba(0, 0, 0, 0.701);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.repo-page-header-left > a:hover {
+  text-decoration: underline;
+}
+
+.repo-page-header-right {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.repo-page-table-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.repo-page-table-header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* .repo-page-read-me{
+width: 900px;
+overflow: scroll;
+} */
+
+
+
+.repo-page-branch,
+.repo-page-tags {
+  cursor: pointer;
+  width: 80px;
+  height: 28px;
+  padding: 2px;
+  border-radius: 5px;
+  color: #5f7161;
+  font-weight: bolder;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  column-gap: 2px;
+}
+
+.repo-page-branch:hover,
+.repo-page-tags:hover {
+  background-color: rgba(167, 165, 165, 0.1);
+}
+
+.repo-page-table-header-right {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.repo-page-main-right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px 0 20px 50px;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.about-repo,
+.releases,
+.packages,
+.languages {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.245);
+  padding-bottom: 20px;
+}
+.releases,
+.packages,
+.languages {
+  margin-top: 20px;
+}
+
+.about-repo > h3,
+.releases > h3,
+.packages > h3,
+.languages > h3 {
+  font-weight: bold;
+}
+
+.about-repo > p {
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.about-repo > .about-homepage {
+  margin-bottom: 15px;
+  color: #0969da;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.about-repo > .about-homepage:hover {
+  text-decoration: underline;
+}
+
+.about-repo > a,
+.releases > p,
+.packages > p {
+  color: #5f7161;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 2.2;
+}
+
+.about-repo > a:hover {
+  color: #0969da;
+}
