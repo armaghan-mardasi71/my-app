@@ -1,0 +1,106 @@
+.activity-month {
+  color: rgb(36, 34, 34);
+  position: relative;
+}
+
+.activity-month::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(136, 134, 134, 0.3);
+  left: 12px;
+  top: 21px;
+  z-index: -20;
+}
+
+.activity-month-year {
+  font-size: 12px;
+  font-weight: bolder;
+  color: rgb(97, 94, 94);
+}
+
+.activity-month-year > span {
+  font-weight: 200;
+  color: rgb(136, 134, 134);
+  margin-left: 5px;
+}
+.activity-month-year::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(136, 134, 134, 0.3);
+  width: 85%;
+  height: 1px;
+  top: 5px;
+  left: 120px;
+}
+.activity-left , .activity-right{
+    display: flex;
+    column-gap: 10px;
+}
+
+.activity-month-content {
+}
+
+.activity-icon-wrapper {
+  border-radius: 50%;
+  background-color: rgb(224, 223, 223);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activity-icon {
+  color: rgb(97, 94, 94);
+  font-size: 18px;
+}
+
+.activity-item-title {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.activity-title > a {
+  color: rgb(48, 46, 46);
+  margin-left: 10px;
+}
+
+.activity-list {
+    width: 800px;
+  display: flex;
+  margin: 20px 0;
+  padding: 0 25px;
+  /* margin-left: 35px; */
+  justify-content: space-between;
+  /* column-gap: 40px; */
+  text-align: center;
+  align-items: center;
+}
+
+.activity-list > li {
+  /* width: 100px; */
+}
+.edited-repo-link {
+  color: #0969da;
+
+}
+.activity-commit-count {
+  font-size: 12px;
+  /* margin-right:400px; */
+  /* margin-left:-100px; */
+  color: rgba(136, 134, 134, 1);
+}
+
+.activity-date {
+  /* margin-left: 500px; */
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(48, 46, 46, 0.52);
+}
+
+.activity-lang {
+  font-size: 12px;
+  color: rgba(48, 46, 46, 0.52);
+  /* position: absolute;
+  right: 130px; */
+}
