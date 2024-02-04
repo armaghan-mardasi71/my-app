@@ -1,2 +1,2 @@
-const myToken = `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`;
+const myToken = `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`;
 export default myToken;

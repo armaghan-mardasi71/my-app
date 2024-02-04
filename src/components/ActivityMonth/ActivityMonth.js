@@ -2,12 +2,13 @@ import "./ActivityMonth.css";
 import React from "react";
 import { GoRepo } from "react-icons/go";
 import LangColors from "../LangColors/LangColors";
+import moment from "moment";
 
 export default function ActivityMonth(props) {
   return (
     <div className="activity-month">
       <h6 className="activity-month-year">
-        December <span>2023</span>
+        {moment(props.created_at).format("MMMM  YYYY")}
       </h6>
       <div className="activity-month-content">
         <div className="activity-item-title">
@@ -40,7 +41,9 @@ export default function ActivityMonth(props) {
               {props.language && <LangColors lang={props.language} />}
               {props.language}
             </li>
-            <li className="activity-date">Dec 20</li>
+            <li className="activity-date">
+              {moment(props.created_at).format("MMMM DD YYYY")}
+            </li>
           </div>
         </ul>
       </div>

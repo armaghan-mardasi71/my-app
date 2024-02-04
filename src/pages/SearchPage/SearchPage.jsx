@@ -59,7 +59,7 @@ export default function SearchPage() {
             </a>
           </div>
           <div className="header-nav-right-wrapper">
-            <SearchModal width="970px" />
+            <SearchModal width="950px" />
             <span className="header-nav-divider-line"></span>
             <div className="header-nav-buttons">
               <span className="create-new">
@@ -90,7 +90,7 @@ export default function SearchPage() {
         <div className="search-page-left-sidebar">
           <h3>Filter by</h3>
           <div className="filter-contents">
-            <NavLink onClick={ activatorFun}>
+            <NavLink onClick={activatorFun}>
               <RiCodeLine
                 style={{ fontSize: 16, strokeWidth: 1, marginRight: 10 }}
               />
@@ -158,28 +158,25 @@ export default function SearchPage() {
             </NavLink>
           </div>
 
+          <div className="filter-langs">
+            <h3>Languages</h3>
+          </div>
 
-            <div className="filter-langs">
-              <h3>Languages</h3>
-            </div>
-
-
-
-            <div className="filter-state">
-              <h3>State</h3>
-            </div>
+          <div className="filter-state">
+            <h3>State</h3>
+          </div>
 
           {/* <div className="filter-types"></div> */}
 
-            <div className="filter-repos">
-              <h3>Repositories</h3>
-            </div>
+          <div className="filter-repos">
+            <h3>Repositories</h3>
+          </div>
 
-        <div className="filter-paths">Paths</div>
+          <div className="filter-paths">Paths</div>
 
-            <div className="filter-advanced">
-              <h3>Advanced</h3>
-            </div>
+          <div className="filter-advanced">
+            <h3>Advanced</h3>
+          </div>
 
           <div className="advanced-search-link">
             <a href="#"></a>
