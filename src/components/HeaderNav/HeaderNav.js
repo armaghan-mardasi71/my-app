@@ -5,7 +5,7 @@ import { RiGitRepositoryLine } from "react-icons/ri";
 import { GoTable } from "react-icons/go";
 import { IoCubeOutline } from "react-icons/io5";
 import { FaRegStar } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation ,useParams} from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import { Octokit } from "octokit";
 import { FaPlus } from "react-icons/fa6";
@@ -23,8 +23,8 @@ export default function HeaderNav() {
   const { userInfo, setUserInfo } = useContext(userInfoContext);
 
   const [allStarRepos, setAllStarRepos] = useState([]);
-
-  // console.log(allRepos);
+  const params = useParams();
+  // console.log(loc);
 
   useEffect(() => {
     const getRepos = async () => {
@@ -35,7 +35,7 @@ export default function HeaderNav() {
       const repoResult = await octokit.request(
         "GET /users/{username}/starred",
         {
-          username: "mojtabast",
+          username: `${params.username}`,
           headers: {
             "X-GitHub-Api-Version": "2022-11-28"
           }

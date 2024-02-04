@@ -17,6 +17,8 @@ import { RiCodeLine, RiGitRepositoryLine } from "react-icons/ri";
 import { FiUsers } from "react-icons/fi";
 import { LuBookOpen, LuMilestone, LuUsers } from "react-icons/lu";
 import { userInfoContext } from "../../contexts/Contexts";
+import LangColors from "../../components/LangColors/LangColors";
+import { HiOutlinePlusCircle } from "react-icons/hi";
 
 export default function SearchPage() {
   const { userInfo } = useContext(userInfoContext);
@@ -31,13 +33,26 @@ export default function SearchPage() {
   const [showIssues, setShowIssues] = useState(false);
   const [showUsers, setShowUsers] = useState(false);
   const [showTopics, setShowTopics] = useState(false);
+  const languages = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "Objective-C",
+    "Java",
+    "C",
+    "PHP",
+    "C++",
+    "Objective-C++",
+    "Assembly"
+  ];
 
   const activatorFun = (event) => {
     let str = event.target.textContent;
     let pat = /[a-zA-Z]/g;
     let letters = str.match(pat);
     console.log(letters.toString());
-    if (letters.toString() == "c,o,d,e") {
+    if (letters.toString() === "c,o,d,e") {
       setShowLangs(true);
       setShowRepos(true);
       setShowPaths(true);
@@ -160,6 +175,12 @@ export default function SearchPage() {
 
           <div className="filter-langs">
             <h3>Languages</h3>
+            {languages.map((lang) => (
+              <p>
+                <LangColors lang={lang} />
+                <span>{lang}</span>
+              </p>
+            ))}
           </div>
 
           <div className="filter-state">
@@ -176,6 +197,38 @@ export default function SearchPage() {
 
           <div className="filter-advanced">
             <h3>Advanced</h3>
+            <p>
+              <HiOutlinePlusCircle style={{ fontSize: 18 }} />
+              Owner
+            </p>
+            <p>
+              <HiOutlinePlusCircle style={{ fontSize: 18 }} />
+              Size
+            </p>
+            <p>
+              <HiOutlinePlusCircle style={{ fontSize: 18 }} />
+              Number of followers
+            </p>
+            <p>
+              <HiOutlinePlusCircle style={{ fontSize: 18 }} />
+              Number of forks
+            </p>
+            <p>
+              <HiOutlinePlusCircle style={{ fontSize: 18 }} />
+              Number of stars
+            </p>
+            <p>
+              <HiOutlinePlusCircle style={{ fontSize: 18 }} />
+              Date created
+            </p>
+            <p>
+              <HiOutlinePlusCircle style={{ fontSize: 18 }} />
+              Date pushed
+            </p>
+            <p>
+              <HiOutlinePlusCircle style={{ fontSize: 18 }} />
+              Topic
+            </p>
           </div>
 
           <div className="advanced-search-link">

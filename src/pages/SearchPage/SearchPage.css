@@ -134,37 +134,35 @@
 
 .search-page-left-sidebar {
   flex: 1;
-  background-color: rgb(185, 136, 136);
-  padding: 15px;
+  /* background-color: rgb(185, 136, 136); */
+  padding: 10px;
 }
 
 .filter-contents {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
+  padding: 20px 0;
   font-size: 14px;
   font-weight: bold;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.245);
 }
 .filter-contents a {
   color: rgb(36, 34, 34);
   padding: 10px 15px;
   display: flex;
   align-items: center;
-
-
 }
 
-
-.filter-contents a >span{
-
+.filter-contents a > span {
   background-color: rgba(128, 128, 128, 0.149);
   padding: 5px;
   margin-left: auto;
-  border-radius:20px ;
-  -webkit-border-radius:20px ;
-  -moz-border-radius:20px ;
-  -ms-border-radius:20px ;
-  -o-border-radius:20px ;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .filter-contents a:hover {
@@ -176,16 +174,56 @@
   -o-border-radius: 5px;
 }
 
-.search-page-left-sidebar>h3{
-font-size: 18px;
-margin-left: 10px;
-padding: 15px 10px;
+.search-page-left-sidebar > h3 {
+  font-size: 18px;
+  margin-left: 10px;
+  padding: 0 10px;
 }
-
-
 
 .search-content-outlet-wrapper {
   flex: 4;
   background-color: brown;
   padding: 15px;
+}
+
+.filter-langs,
+.filter-advanced {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.245);
+}
+
+.filter-langs h3,
+.filter-advanced h3 {
+  font-size: 14px;
+  margin-left: 5px;
+  padding: 15px 10px;
+  color: rgb(111, 108, 108);
+}
+
+.filter-langs p {
+  padding: 10px 30px;
+  font-size: 14px;
+}
+.filter-advanced p {
+  font-size: 14px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.filter-langs p:hover,
+.filter-advanced p:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.149);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
