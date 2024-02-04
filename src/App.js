@@ -32,7 +32,7 @@ function App() {
     };
     getRepos()
       .then((res) => setAllRepos(res))
-      .catch((err) => console.log(err));
+      // .catch((err) => console.log(err));
   }, []);
 
   useEffect(() => {
@@ -51,7 +51,7 @@ function App() {
     }
     sendReq()
       .then((res) => setUserInfo(res))
-      .catch((err) => console.log(err));
+      // .catch((err) => console.log(err));
   }, []);
 
   return (
