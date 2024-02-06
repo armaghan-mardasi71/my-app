@@ -7,7 +7,7 @@ import { reposContext } from "./contexts/Contexts";
 import { userInfoContext } from "./contexts/Contexts";
 import myToken from "./myToken";
 import { Octokit } from "octokit";
-import SearchPage from "./pages/SearchPage/SearchPage";
+// import SearchPage from "./pages/SearchPage/SearchPage";
 
 function App() {
   const router = useRoutes(routes);
@@ -32,7 +32,7 @@ function App() {
     };
     getRepos()
       .then((res) => setAllRepos(res))
-      // .catch((err) => console.log(err));
+      .catch((err) => console.log(err));
   }, []);
 
   useEffect(() => {
@@ -51,7 +51,7 @@ function App() {
     }
     sendReq()
       .then((res) => setUserInfo(res))
-      // .catch((err) => console.log(err));
+      .catch((err) => console.log(err));
   }, []);
 
   return (

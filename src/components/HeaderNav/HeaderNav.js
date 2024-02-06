@@ -26,26 +26,26 @@ export default function HeaderNav() {
   const params = useParams();
   // console.log(loc);
 
-  useEffect(() => {
-    const getRepos = async () => {
-      const octokit = new Octokit({
-        auth: myToken
-      });
+  // useEffect(() => {
+  //   const getRepos = async () => {
+  //     const octokit = new Octokit({
+  //       auth: myToken
+  //     });
 
-      const repoResult = await octokit.request(
-        "GET /users/{username}/starred",
-        {
-          username: `${params.username}`,
-          headers: {
-            "X-GitHub-Api-Version": "2022-11-28"
-          }
-        }
-      );
+  //     const repoResult = await octokit.request(
+  //       "GET/users/{username}/starred",
+  //       {
+  //         username: `${params.username}`,
+  //         headers: {
+  //           "X-GitHub-Api-Version": "2022-11-28"
+  //         }
+  //       }
+  //     );
 
-      return repoResult.data;
-    };
-    getRepos().then((res) => setAllStarRepos(res));
-  }, []);
+  //     return repoResult.data;
+  //   };
+  //   getRepos().then((res) => setAllStarRepos(res));
+  // }, []);
 
   return (
     <nav className="header-nav">
