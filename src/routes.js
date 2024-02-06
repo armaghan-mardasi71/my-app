@@ -20,7 +20,7 @@ import SearchUsers from "./components/SearchUsers/SearchUsers";
 
 const routes = [
   {
-    path: "/:username/",
+    path: "/:username",
     element: <ProfilePage />,
     children: [
       { path: "overview", element: <Overview /> },
